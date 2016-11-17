@@ -1,0 +1,11 @@
+cylinder :: Int -> Int -> Int
+    r :: Int
+    h :: Int =
+        let pi :: Int = 3;
+            sideArea :: Int = mul (mul (mul 2 pi) r) h;
+            r2 :: Int = mul r r;
+            topArea :: Int = mul pi r2
+        in  add sideArea (mul 2 topArea)
+;
+
+cylinder 3 4

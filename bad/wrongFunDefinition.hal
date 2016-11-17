@@ -1,0 +1,8 @@
+addd :: Int -> Int -> Int -> Int
+    x :: Bool
+    y :: Int
+    z :: Int =
+        add (add x y) z
+;
+
+n :: Int = addd 2 2 1;

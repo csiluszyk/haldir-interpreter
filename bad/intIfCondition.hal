@@ -1,0 +1,10 @@
+f :: Int -> Int
+    n :: Int =
+        if 4 then
+            42
+        else
+            0
+;
+
+x :: Int = f 4;
+y :: Int = f 5;

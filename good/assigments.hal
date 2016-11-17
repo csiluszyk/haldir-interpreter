@@ -1,0 +1,4 @@
+x :: Int = 42;
+b :: Bool = True;
+l :: [Int] = [42, 43];
+k :: [Int] = l;

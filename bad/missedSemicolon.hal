@@ -1,0 +1,2 @@
+x :: Int = 42
+b :: Bool = True;

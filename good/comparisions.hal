@@ -1,0 +1,2 @@
+x :: Bool = eqB (lt 5 6) (gte 5 5);
+y :: Bool = negateB x;

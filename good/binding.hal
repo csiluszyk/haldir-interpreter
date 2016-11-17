@@ -1,0 +1,10 @@
+f :: Int = 40;
+
+addf :: Int -> Int
+    x :: Int =
+        add f x
+;
+
+f :: Int = 5;
+
+n :: Int = addf 2;

@@ -1,0 +1,17 @@
+f1 :: Int -> Int
+    x :: Int =
+        3
+;
+
+f2 :: Int -> Int
+    x :: Int =
+        f1 x
+;
+
+f3 :: Int -> Int
+    x :: Int =
+        let x :: Int = 4 in
+            let f1 :: Int -> Int = (\Int -> Int y :: Int => x) in
+                f1 5;
+
+f3 2;

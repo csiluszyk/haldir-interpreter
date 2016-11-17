@@ -1,0 +1,6 @@
+apply5 :: (Int -> Int) -> Int
+    f :: Int -> Int =
+        f 5
+;
+
+apply5 (\Int -> Int x :: Int => mul 5 y);

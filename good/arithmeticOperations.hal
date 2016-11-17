@@ -1,0 +1,2 @@
+x :: Bool = eq (add (negate 42) 42) 0;
+y :: Bool = neq (sub 8 4) (mul 2 2);

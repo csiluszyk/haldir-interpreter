@@ -1,0 +1,6 @@
+a :: Int = 3;
+g :: Int -> Int x :: Int =
+    let a :: Int = 4 in
+        mul x a
+;
+z :: Int = g a

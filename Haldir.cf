@@ -1,0 +1,45 @@
+--- Cezary Siłuszyk, 321191
+--- Programming Languages and Paradigms 2015/16
+--- 2. Programming assignment - Grammar
+
+Prog. Program ::= [Inst] ;
+separator Inst ";" ;
+
+EInst. Inst ::= Exp ;
+DInst. Inst ::= Def ;
+
+TInt. Type1 ::= "Int" ;
+TBool. Type1 ::= "Bool" ;
+TList. Type1 ::= "[" "Int" "]" ;
+TFun. Type ::= Type1 "->" Type ;
+
+IdT. IdentT ::= Ident "::" Type ;
+
+--- Definition
+Defin. Def ::= [IdentT] "=" Exp ;
+separator nonempty IdentT "" ;
+
+--- Expressions
+EVar. Exp2 ::= Ident ;
+ECond. Exp ::= "if" Exp "then" Exp "else" Exp ;
+ELet. Exp ::= "let" [Def] "in" Exp ;
+separator Def ";" ;
+EAnon. Exp ::= "\\" Type [IdentT] "=>" Exp ;
+EApp. Exp1 ::= Exp1 Exp2 ;
+
+--- Lists
+List. Exp2 ::= "[" [Integer] "]" ;
+separator Integer "," ;
+
+--- Type expressions
+EInt. Exp2 ::= Integer ;
+EBool. Exp2 ::= Boolean ;
+BTrue. Boolean ::= "True" ;
+BFalse. Boolean ::= "False" ;
+
+comment "--" ;
+
+coercions Exp 2 ;
+coercions Type 1 ;
+
+--- Source: BNFC documentation.

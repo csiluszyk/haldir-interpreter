@@ -1,0 +1,1 @@
+e :: Bool = empty (tail (tail [42]));

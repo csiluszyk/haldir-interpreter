@@ -1,0 +1,1 @@
+mul 6 (let a :: Int = 6 in add a 1)

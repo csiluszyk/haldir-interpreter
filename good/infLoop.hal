@@ -1,0 +1,6 @@
+x :: Int -> Int
+    n :: Int =
+        x n
+;
+
+y :: Int = x 42;

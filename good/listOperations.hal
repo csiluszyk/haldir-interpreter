@@ -1,0 +1,49 @@
+l :: [Int] = [0, 1, 1, 2, 3, 5, 8];
+
+h :: Int = head l;
+
+t :: [Int] = tail l;
+
+m :: Int = head (tail t);
+
+n :: Bool = empty l;
+
+e :: Bool = empty (tail [42]);
+
+reverse :: [Int] -> [Int]
+    l :: [Int] =
+        let reverse_aux :: [Int] -> [Int] -> [Int]
+            l :: [Int]
+            acc :: [Int] =
+                if empty l then
+                    acc
+                else
+                    reverse_aux (tail l) (cons (head l) acc)
+        in reverse_aux l []
+;
+
+reverse [1, 2, 3];
+
+and :: Bool -> Bool -> Bool
+    x :: Bool
+    y :: Bool =
+        if x then
+            y
+        else
+            False
+;
+
+f :: [Int] -> Bool
+    l :: [Int] =
+        if empty l then
+            False
+        else
+            if and (eq (head l) 2) (negateB (empty (tail l))) then
+                and (eq (head (tail l)) 1) (empty (tail (tail l)))
+            else
+                False
+;
+
+f [2, 1];
+f [2];
+f [2, 1, 3];

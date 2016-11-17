@@ -1,0 +1,6 @@
+apply5 :: (Int -> Int) -> Int
+    f :: Int -> Int =
+        f 5
+;
+
+apply5 (\Int -> Int x :: Bool => eq 5 x);
